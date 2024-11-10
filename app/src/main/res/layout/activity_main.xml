@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+<EditText
+android:id="@+id/urlInput"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:hint="Search"
+android:imeOptions="actionDone"
+android:inputType="textUri" />
+</LinearLayout>
+
+<WebView
+android:id="@+id/webView"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:layout_marginTop="16dp" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="16dp">
+
+<Button
+android:id="@+id/GolikeButton"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Golike" />
+
+<Button
+android:id="@+id/HelpButton"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Help" />
+
+</LinearLayout>
+
+<Button
+android:id="@+id/showDialogButton"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Show Auth/Cookies"
+android:layout_marginTop="16dp" />
+
+<TextView
+android:id="@+id/About"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@WDLF Osteup\nView source code at Github: @binhpt567"
+android:layout_marginTop="16dp" />
+</LinearLayout>
